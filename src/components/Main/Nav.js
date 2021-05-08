@@ -15,18 +15,27 @@ const MessageIcon = styled.span`
     font-size: 27px;
     cursor: pointer;
 `
+const ImgContainer = styled.div`
+    height: 3rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+`
+
 
 const ProfileImg = styled.img`
-    height: 2rem;
-    margin: 0 1rem;
+    width: 3rem;
     cursor: pointer;
 `
+
 
 const Nav = () => {
   return (
     <Container>
       <MessageIcon className="iconify" data-inline="false" data-icon="mdi-light:email"></MessageIcon>
-      <ProfileImg src={image} />
+      <ImgContainer>
+        <ProfileImg src={image} />
+      </ImgContainer>
     </Container>
   )
 }
