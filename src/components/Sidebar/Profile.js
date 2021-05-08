@@ -19,8 +19,10 @@ const ProfileName = styled.h1`
 const Profile = () => {
     return (
         <div>
-            <ProfileImg src={Image} />
-            <ProfileName>Usuario</ProfileName>
+            <Container>
+                <ProfileImg src={Image} />
+                <ProfileName>Scott Grant</ProfileName>
+            </Container>
         </div>
     )
 }
